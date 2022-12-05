@@ -1,0 +1,15 @@
+C:\Users\doug\Desktop\interviewing.io\WaterTower\bin\Debug\net6.0\WaterTower.exe
+C:\Users\doug\Desktop\interviewing.io\WaterTower\bin\Debug\net6.0\WaterTower.deps.json
+C:\Users\doug\Desktop\interviewing.io\WaterTower\bin\Debug\net6.0\WaterTower.runtimeconfig.json
+C:\Users\doug\Desktop\interviewing.io\WaterTower\bin\Debug\net6.0\WaterTower.dll
+C:\Users\doug\Desktop\interviewing.io\WaterTower\bin\Debug\net6.0\WaterTower.pdb
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\WaterTower.csproj.AssemblyReference.cache
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\WaterTower.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\WaterTower.AssemblyInfoInputs.cache
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\WaterTower.AssemblyInfo.cs
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\WaterTower.csproj.CoreCompileInputs.cache
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\WaterTower.dll
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\refint\WaterTower.dll
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\WaterTower.pdb
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\WaterTower.genruntimeconfig.cache
+C:\Users\doug\Desktop\interviewing.io\WaterTower\obj\Debug\net6.0\ref\WaterTower.dll

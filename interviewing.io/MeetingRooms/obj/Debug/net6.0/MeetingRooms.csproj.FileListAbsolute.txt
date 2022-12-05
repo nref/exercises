@@ -1,0 +1,15 @@
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\bin\Debug\net6.0\MeetingRooms.exe
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\bin\Debug\net6.0\MeetingRooms.deps.json
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\bin\Debug\net6.0\MeetingRooms.runtimeconfig.json
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\bin\Debug\net6.0\MeetingRooms.dll
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\bin\Debug\net6.0\MeetingRooms.pdb
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\MeetingRooms.csproj.AssemblyReference.cache
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\MeetingRooms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\MeetingRooms.AssemblyInfoInputs.cache
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\MeetingRooms.AssemblyInfo.cs
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\MeetingRooms.csproj.CoreCompileInputs.cache
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\MeetingRooms.dll
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\refint\MeetingRooms.dll
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\MeetingRooms.pdb
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\MeetingRooms.genruntimeconfig.cache
+C:\Users\doug\Desktop\interviewing.io\MeetingRooms\obj\Debug\net6.0\ref\MeetingRooms.dll
