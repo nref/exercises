@@ -5,6 +5,7 @@ using System.Collections.Generic;
 new Solution().solution(5, 3);
 new Solution().solution(3, 3);
 new Solution().solution(1, 4);
+new Solution().solution(10, 40);
 
 class Solution
 {

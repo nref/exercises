@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PJ31ES8OQa2wKWNbQmUIJZdb30x133IrwBqdhEn9z7A8ygyCKxN8qrEpjNrZoHdmYJwLT9A1aBn8KuilRK92MA==",
+  "dgSpecHash": "RI8xauwtQkgziPB6jEbA4Q0HlOyUKMnfmTfpgp33p1wOxqo2wAFfxIedrWWwBLvIYpmyNe0IxS4H+TxMlwWRoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\doug\\Desktop\\codility\\ThreeLetters\\ThreeLetters.csproj",
+  "projectFilePath": "F:\\repos\\exercises\\codility\\ThreeLetters\\ThreeLetters.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

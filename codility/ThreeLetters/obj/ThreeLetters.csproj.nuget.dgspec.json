@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\doug\\Desktop\\codility\\ThreeLetters\\ThreeLetters.csproj": {}
+    "F:\\repos\\exercises\\codility\\ThreeLetters\\ThreeLetters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\doug\\Desktop\\codility\\ThreeLetters\\ThreeLetters.csproj": {
+    "F:\\repos\\exercises\\codility\\ThreeLetters\\ThreeLetters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\doug\\Desktop\\codility\\ThreeLetters\\ThreeLetters.csproj",
+        "projectUniqueName": "F:\\repos\\exercises\\codility\\ThreeLetters\\ThreeLetters.csproj",
         "projectName": "ThreeLetters",
-        "projectPath": "C:\\Users\\doug\\Desktop\\codility\\ThreeLetters\\ThreeLetters.csproj",
+        "projectPath": "F:\\repos\\exercises\\codility\\ThreeLetters\\ThreeLetters.csproj",
         "packagesPath": "C:\\Users\\doug\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\doug\\Desktop\\codility\\ThreeLetters\\obj\\",
+        "outputPath": "F:\\repos\\exercises\\codility\\ThreeLetters\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\doug\\AppData\\Roaming\\NuGet\\NuGet.Config",
