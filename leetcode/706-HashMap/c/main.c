@@ -3,7 +3,7 @@
  * Handles collisions with linked lists.
  * The hash algo is FNV-1a.
  *
- * /
+ */
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -29,20 +29,24 @@ char get_byte(int number, int n) {
    return (number >> (n * 8)) & 0xFF;
 }
 
-int get_hash(int number) {
+int get_hash_raw(void* data, int nbytes) {
     // FNV-1a
     const unsigned long long big_prime = 14695981039346656037U;
     const unsigned long long little_prime = 1099511628211U;
 
     unsigned long long hash = big_prime;
-    const int nbytes = 4; // assume 32-bit integer
     for (int i = 0; i < nbytes; i++)
     {
-        hash ^= get_byte(number, i);
+        hash ^= get_byte(data, i);
         hash *= little_prime;
     }
 
     return hash;
+}
+
+int get_hash(int number) {
+    const int nbytes = 4; // assume 32-bit integer
+    return get_hash_raw(&number, 4);
 }
 
 HashTable* ht_create() {
