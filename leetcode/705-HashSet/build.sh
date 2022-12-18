@@ -1,1 +1,1 @@
-gcc -Wall -Wpedantic main.c -o main
+gcc -Wall -Wpedantic main.c -o bin/main
