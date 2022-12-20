@@ -1,1 +1,3 @@
-gcc -g -Wall -Wpedantic -o urlify urlify.c
+mkdir -p ./bin
+clear
+gcc -g -Wall -Wpedantic main.c -o ./bin/main
