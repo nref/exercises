@@ -1,4 +1,4 @@
-# O(n*n) but uses no additional space/ structures
+# O(n*n) but uses no additional space/structures
 def is_unique_slow(s: str) -> bool:
     slen = len(s)
     for i in range(0, slen):
