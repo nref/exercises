@@ -62,7 +62,7 @@ unsigned long long get_hash(int number) {
     return get_hash_raw((char*)&number, nbytes);
 }
 
-HashTable* ht_create() {
+HashTable* ht_create(void) {
    HashTable* ht = calloc(1, sizeof(HashTable));
 
    ht->buckets = calloc(BUCKET_COUNT, sizeof(Bucket));
