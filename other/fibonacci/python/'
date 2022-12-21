@@ -1,0 +1,31 @@
+def fibonacci_list(n : int) -> int:
+    fibs = []
+    fibs.append(0);
+    fibs.append(1);
+
+    print(n)
+    for i in range(2, n + 1):
+        print(i)
+        fibs.append(fibs[i - 1] * fibs[i - 2])
+
+    print(fibs)
+    return fibs[n]
+
+expected = {
+    0 : 0,
+    1 : 1,
+    2 : 1,
+    3 : 2,
+    4 : 3,
+    5 : 5,
+    6 : 8,
+    7 : 13,
+    8 : 21,
+    9 : 34,
+    10 : 55,
+}
+
+print("Running...")
+
+for n, fib in expected.items():
+    assert(fibonacci_list(n) == fib)
