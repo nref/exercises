@@ -22,10 +22,10 @@ void ht_insert_string(HashTable* ht, char* s) {
   for (int i = 0; i < len; i++) {
 
     int c = (int)s[i];
-    int* count = NULL;
+    int count = 0;
 
-    if (ht_try_get(ht, c, count)) {
-      (*count)++;
+    if (ht_try_get(ht, c, &count)) {
+      ht_add(ht, c, count + 1);
     }
     else {
       ht_add(ht, c, 1);
@@ -34,8 +34,12 @@ void ht_insert_string(HashTable* ht, char* s) {
 }
 
 // O(n). Put the chars of each string in a hash table. 
-// Verify that each string's chars are in the other string's table.
+// Verify that the hash tables are equal (have the same keys and values)
 bool is_permutation_hashtable(char* s1, char* s2) {
+  if (strlen(s1) != strlen(s2)) {
+    return false;
+  }
+
   HashTable* ht1 = ht_create();
   HashTable* ht2 = ht_create();
 
@@ -43,13 +47,21 @@ bool is_permutation_hashtable(char* s1, char* s2) {
   ht_insert_string(ht2, s2);
 
   for (int i = 0; i < strlen(s1); i++) {
-    if (!ht_contains(ht2, (int)s1[i])) {
+    int count1 = 0;
+    int count2 = 0;
+
+    // bail if a char in s2 is not in s1
+    if (!ht_try_get(ht1, (int)s2[i], &count1)) {
       return false;
     }
-  }
 
-  for (int i = 0; i < strlen(s2); i++) {
-    if (!ht_contains(ht1, (int)s2[i])) {
+    // bail if a char in s1 is not in s2
+    if (!ht_try_get(ht2, (int)s1[i], &count2)) {
+      return false;
+    }
+
+    // bail if a char occurs more in s1 or s2
+    if (count1 != count2) {
       return false;
     }
   }
@@ -62,11 +74,15 @@ int main(int argc, char** argv) {
   char s1[] = "racecar";
   char s2[] = "acerarc";
   char s3[] = "zcerarc";
+  char s4[] = "cerarc";
   
   assert(is_permutation_sorted(s1, s2));
-  assert(is_permutation_sorted(s1, s2));
+  assert(!is_permutation_sorted(s1, s3));
+  assert(!is_permutation_sorted(s1, s4));
+  assert(!is_permutation_sorted(s4, s1));
 
+  assert(is_permutation_hashtable(s1, s2));
   assert(!is_permutation_hashtable(s1, s3));
-  assert(!is_permutation_hashtable(s1, s3));
+  assert(!is_permutation_hashtable(s4, s1));
   return 0;
 }
