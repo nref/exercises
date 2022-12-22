@@ -72,8 +72,8 @@ def test_levenshtein_dp(s1: str, s2: str, expected: int):
         print(f"levenshtein_dp(\"{s1}\", \"{s2}\") -> {result}. expected {expected}")
     assert(ok)
 
+test_levenshtein_dp("kitten", "sitting", 3)
 test_levenshtein_dp("cat", "mats", 2)
 test_levenshtein_dp("cat", "cats", 1)
 test_levenshtein_dp("cat", "mat", 1)
 test_levenshtein_dp("cat", "cat", 0)
-test_levenshtein_dp("kitten", "sitting", 3)
