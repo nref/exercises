@@ -65,13 +65,18 @@ def search(K, arr):
 
 def solution(K, arr):
   i = find_pivot(arr)
-  (left, right) = split(i, arr) # TODO unpivot in place
-  theSplit = right + left
-  idx = search(K, theSplit)
+  (left, right) = split(i, arr)
 
-  if idx < len(right):
-    return idx + len(left)
-  return idx - len(right)
+  if len(arr) == 0:
+    return -1
+  if K == arr[i]:
+    return i # shortcut: no search needed
+  elif i < 0:
+    return search(K, arr) # no pivot, use whole array
+  elif K >= arr[0]:
+    return search(K, left) # search left array
+
+  return len(left) + search(K, right) # search right array
 
 def test_find_pivot(arr, want):
   got = find_pivot(arr)
@@ -109,6 +114,9 @@ test_split(6, [5, 6, 7, 8, 9, 10, 1, 2, 3], ([5, 6, 7, 8, 9, 10], [1, 2, 3]))
 test_find_pivot([5, 6, 7, 8, 9, 10, 1, 2, 3], 6)
 
 # Integration test
+test_solution(1, [], -1);
+test_solution(1, [1], 0);
+test_solution(1, [1, 2, 3], 0);
 test_solution(1, [5, 6, 7, 8, 9, 10, 1, 2, 3], 6);
 test_solution(2, [5, 6, 7, 8, 9, 10, 1, 2, 3], 7);
 test_solution(3, [5, 6, 7, 8, 9, 10, 1, 2, 3], 8);
