@@ -1,5 +1,6 @@
 # Convert A to a set. 
 # Then iterate n from 1 to 1_000_000 and return n if it's not in set(A)
+# Runtime: 0(n)
 def solution(A):
   theSet = set(A);
   for elem in range(1, 1_000_000):
