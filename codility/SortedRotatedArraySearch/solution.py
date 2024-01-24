@@ -106,8 +106,6 @@ def test_solution(K, arr, want):
 
   print(f"test_solution({K}, {arr}) -> {got} ({msg})")
 
-print("---")
-
 # Unit tests
 test_search(6, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 6)
 test_split(6, [5, 6, 7, 8, 9, 10, 1, 2, 3], ([5, 6, 7, 8, 9, 10], [1, 2, 3]))

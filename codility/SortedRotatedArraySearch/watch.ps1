@@ -1,7 +1,6 @@
 # Preconditions:
-# > cargo install cargo-watch
-# > cargo init
+# > cargo install watchexec-cli 
 
-cargo watch -q -s "python solution.py" --use-shell=powershell
+watchexec -q -r -c reset "python solution.py"
 
 
