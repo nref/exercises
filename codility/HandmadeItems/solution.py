@@ -38,9 +38,9 @@ def solution_slow(T):
 # the above solution is O(N^2) because of the sum, inner while, and inner for.
 # goals: remove the sum, inner while, and inner for
 #   we can replace the sum with an initial sum of waiting clients and decrement
-#   then the outer while can be replaced with a for loop
-#   then we can replace the inner while with a continue 
-#   the inner for can be replaced with a counter of all wait times. for that we keep track of how many clients are done
+#   then we can replace the inner while with array lookups and a continue
+#   the inner for can be replaced with a counter of all wait times. 
+#     for that we keep track of how many clients are done
 # Result: O(N)
 def solution_fast(T):
     n = len(T)
