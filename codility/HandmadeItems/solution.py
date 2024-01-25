@@ -44,9 +44,9 @@ def solution_slow(T):
 # Result: O(N)
 def solution_fast(T):
     n = len(T)
-    c = -1 # currently serviced client
+    c = -1 # currently serviced client. Start at -1 because we increment at the top of the loop 
     c_waiting = n # how many clients are still waiting 
-    total_wait = 0
+    total_wait = 0 # total wait time of all clients
     work_done = [0] * n # hours worked for each client
 
     # Loop until all work is done
